@@ -16,6 +16,6 @@ def index():
     return render_template("index.html",my_match=m)
 
 if __name__ =="__main__":
-    app.run(debug=True)
+    app.run()
 
 
