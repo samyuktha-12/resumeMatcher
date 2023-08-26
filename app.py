@@ -13,7 +13,7 @@ def index():
         job_desc=request.form["Job Description"]
         mat = matcher.match_predict(resume,job_desc)
         m=str(mat)
-    return render_template("templates/index.html",my_match=m)
+    return render_template("index.html",my_match=m)
 
 if __name__ =="__main__":
     app.run()
